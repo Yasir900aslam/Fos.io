@@ -56,7 +56,6 @@ export default function Body() {
           </Row>
         </Grid>
       </Grid.Container>
-      <Divider />
     </>
   );
 }
