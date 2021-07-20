@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Header from "./header";
+import Body from "./Body";
+import Footer from "./Footer";
 import styles from "../styles/Home.module.css";
 
 export default function HomeComponent() {
@@ -11,6 +13,8 @@ export default function HomeComponent() {
           <meta name="description" content="Open Source File.io Alternative" />
         </Head>
         <Header />
+        <Body />
+        <Footer />
       </div>
     </>
   );
