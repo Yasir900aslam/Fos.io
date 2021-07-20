@@ -6,14 +6,19 @@ import {
   Divider,
   Spacer,
   Avatar,
-  Description,
+  Row,
+  Col,
 } from "@geist-ui/react";
 export default function Header() {
   return (
     <>
       <Grid.Container gap={2}>
         <Grid xs={12}>
-          <Text h1>Fos.io</Text>
+          <Row>
+            <Col>
+              <Text h1>Fos.io</Text>
+            </Col>
+          </Row>
         </Grid>
         <Grid xs={12} style={{ marginTop: "20px" }}>
           <Button size="small" shadow type="secondary">
