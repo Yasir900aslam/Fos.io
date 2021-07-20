@@ -1,5 +1,5 @@
 import React from "react";
-import { Display, Grid, Code, Divider } from "@geist-ui/react";
+import { Display, Grid, Code, Divider, Card, Col, Row } from "@geist-ui/react";
 export default function Body() {
   return (
     <>
@@ -26,7 +26,35 @@ export default function Body() {
             </label>
           </Display>
         </Grid>
-        <Grid xs={24}>list of files</Grid>
+        <Grid xs={24} style={{ overflow: "auto", overflowY: "hidden" }}>
+          <Row gap={1}>
+            <Col>
+              <Card hoverable>
+                <p>hoverable card</p>
+              </Card>
+            </Col>
+            <Col>
+              <Card hoverable>
+                <p>hoverable card</p>
+              </Card>
+            </Col>
+            <Col>
+              <Card hoverable>
+                <p>hoverable card</p>
+              </Card>
+            </Col>
+            <Col>
+              <Card hoverable>
+                <p>hoverable card</p>
+              </Card>
+            </Col>
+            <Col>
+              <Card hoverable>
+                <p>hoverable card</p>
+              </Card>
+            </Col>
+          </Row>
+        </Grid>
       </Grid.Container>
       <Divider />
     </>
